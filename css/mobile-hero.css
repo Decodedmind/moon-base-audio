@@ -1,0 +1,37 @@
+/* Mobile-only hero positioning override */
+@media (max-width:760px){
+  .hero{
+    padding:40px 0 64px;
+  }
+
+  .hero .wrap{
+    position:relative;
+    z-index:2;
+  }
+
+  .orbit{
+    right:auto;
+    left:58%;
+    top:27%;
+    width:min(96vw,620px);
+    transform:translate(-50%,-20%);
+    opacity:.26;
+  }
+
+  .orbit .moon{
+    opacity:.38;
+  }
+
+  .orbit::before{
+    opacity:.9;
+  }
+}
+
+@media (max-width:520px){
+  .orbit{
+    left:62%;
+    top:26%;
+    width:110vw;
+    transform:translate(-50%,-18%);
+  }
+}
