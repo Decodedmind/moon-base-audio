@@ -12,12 +12,12 @@
   const RELEASES_PAGE = [
     {
       artist: "Arferello",
-      title: "Latest release",
+      title: "Dirty Dancing",
       type: "Single",
       date: "2026-10-02",
       spotify: "https://open.spotify.com/track/0xdsu4JoWyoXmKVAObt7Rq?si=864a82b42fbb4fc7",
       artistSpotify: "https://open.spotify.com/artist/6pYXstzGkC9T8BEDyh0ERL?si=kL9FvEd2TCe9U-RSVbRtMQ",
-      image: null,
+      image: "assets/images/arferello-dirty-dancing.webp",
       featured: true
     }
   ];
@@ -33,7 +33,7 @@
         <div class="release-kicker">${r.featured ? "New release" : esc(r.type || "Release")}</div>
         <h2 class="h2">${esc(r.title)}</h2>
         <p class="release-by">${esc(r.artist)}${r.date ? ` · ${new Date(r.date + "T12:00:00").toLocaleDateString("en-US", { month:"long", day:"numeric", year:"numeric" })}` : ""}</p>
-        <p class="body">Stream the release on Spotify or open the artist page for the full catalog.</p>
+        <p class="body">The latest single from Arferello. Stream it on Spotify or open the artist page for the full catalog.</p>
         <div class="btn-row">
           ${Button(r.spotify, "Listen on Spotify", "primary")}
           ${Button(r.artistSpotify, `${r.artist} on Spotify`)}
