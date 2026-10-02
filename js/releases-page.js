@@ -17,7 +17,7 @@
       date: "2026-10-02",
       spotify: "https://open.spotify.com/track/0xdsu4JoWyoXmKVAObt7Rq?si=864a82b42fbb4fc7",
       artistSpotify: "https://open.spotify.com/artist/6pYXstzGkC9T8BEDyh0ERL?si=kL9FvEd2TCe9U-RSVbRtMQ",
-      image: "assets/images/arferello-dirty-dancing.webp?v=2",
+      image: "https://i.scdn.co/image/ab67616d0000b273c7bf27b37d8fd8e591b2128a",
       description: "The latest single from Arferello.",
       featured: true
     },
