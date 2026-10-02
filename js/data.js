@@ -121,6 +121,7 @@ const SEO = {
 };
 
 const NAV = [
+  { path: "/", label: "Home" },
   { path: "/artists", label: "Artists" },
   { path: "/tour", label: "Live" },
   { path: "/booking", label: "Booking" },
