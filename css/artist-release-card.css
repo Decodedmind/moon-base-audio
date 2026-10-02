@@ -1,0 +1,13 @@
+/* Moon Base Audio — artist profile release card */
+.artist-release-feature{display:grid;grid-template-columns:minmax(180px,280px) minmax(0,1fr);gap:28px;align-items:center;border:1px solid var(--line);background:linear-gradient(135deg,var(--bg-raised),#070809 62%,rgba(61,107,255,.08));padding:20px;margin-top:18px}
+.artist-release-cover{display:block;aspect-ratio:1;overflow:hidden;border:1px solid var(--line-strong)}
+.artist-release-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.artist-release-info{display:grid;gap:14px;align-content:center}
+.artist-release-info .small{text-transform:uppercase;letter-spacing:.12em;color:var(--accent)}
+.artist-release-info h3{margin:0;font-size:clamp(1.8rem,4vw,3rem);line-height:.95;text-transform:uppercase}
+.artist-release-info p{margin:0;color:var(--muted)}
+.artist-release-info .btn{justify-self:start;margin-top:4px}
+@media (max-width:700px){
+  .artist-release-feature{grid-template-columns:1fr;gap:20px;padding:16px}
+  .artist-release-cover{max-width:420px;width:100%}
+}
