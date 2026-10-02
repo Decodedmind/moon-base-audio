@@ -24,11 +24,11 @@ const SITE = {
          (works with Formspree, Getform, Basin, a Netlify/Vercel function, etc.).
          The endpoint should return a 2xx status on success. */
   formEndpoint: "",
-  // Moon Base Audio's own channels. Leave null until the account exists; it shows as "Coming soon".
+  // Moon Base Audio's own channels.
   social: {
-    instagram: null,   // e.g. "https://instagram.com/moonbaseaudio"
-    spotify: null,     // e.g. a Spotify playlist URL
-    youtube: null      // e.g. "https://youtube.com/@moonbaseaudio"
+    instagram: "https://instagram.com/moonbaseaudio",
+    spotify: null,
+    youtube: null
   }
 };
 
@@ -43,13 +43,13 @@ const ARTISTS = [
       "Current material includes the HATE THE PLAYER project. Paul performs live around Jackson alongside Arferello as part of the Moon Base Audio run."
     ],
     image: "assets/images/paul-mccall.jpg",
-    imagePosition: "50% 30%",   // focal point when the photo is cropped
+    imagePosition: "50% 30%",
     metrics: { spotifyMonthly: 6874, instagramFollowers: 4500 },
     links: {
       instagram: { handle: "@paulyftw", url: "https://instagram.com/paulyftw" },
       beacons: "https://beacons.ai/paulyftw",
-      spotify: null,     // add the Spotify artist URL
-      youtube: null,     // add the YouTube channel URL
+      spotify: "https://open.spotify.com/artist/3E1tGVJPzqka4u67JleS3t?si=FraoMo9SQ-mnHxrmfRO0qQ",
+      youtube: null,
       appleMusic: null
     },
     releases: [
@@ -72,7 +72,7 @@ const ARTISTS = [
     links: {
       instagram: { handle: "@arferello", url: "https://instagram.com/arferello" },
       beacons: "https://beacons.ai/arferello",
-      spotify: null,
+      spotify: "https://open.spotify.com/artist/6pYXstzGkC9T8BEDyh0ERL?si=kL9FvEd2TCe9U-RSVbRtMQ",
       youtube: null,
       appleMusic: null
     },
@@ -85,7 +85,6 @@ const ARTISTS = [
   }
 ];
 
-// The live act and their shared material
 const LIVE_ACT = {
   name: "Paul McCall + Arferello",
   artists: ["paul-mccall", "arferello"],
@@ -96,12 +95,6 @@ const LIVE_ACT = {
   collabs: [{ title: "Demons", credit: "Arferello feat. Paul McCall", url: null }]
 };
 
-/* TOUR DATES
-   date:   "YYYY-MM-DD", or null for a show without a date yet (shows as TBA)
-   status: leave out and it's worked out from the date automatically
-           (past dates become PAST, today and later become UPCOMING).
-           Set "UPCOMING" | "PAST" | "TBA" only to override.
-   Add new shows to this list; they sort automatically. */
 const TOUR_INFO = {
   name: "City of Jackson Tour",
   presenter: "Moon Base Audio presents",
@@ -116,7 +109,6 @@ const TOUR = [
   { venue: "Conkrete Kickz",       city: "Jackson, MS", date: "2026-10-24", doors: "7 PM", act: "Paul McCall + Arferello", tour: "City of Jackson Tour", url: null }
 ];
 
-/* SEO per route */
 const SEO = {
   "/":         ["Moon Base Audio | Jackson Mississippi Music & Independent Artists", "Moon Base Audio is an independent artist platform in Jackson, Mississippi, working with Mississippi independent artists Paul McCall and Arferello."],
   "/artists":  ["Artists | Paul McCall & Arferello | Moon Base Audio", "Mississippi independent artists on Moon Base Audio: Paul McCall and Arferello. Mississippi hip-hop, alternative, and pop from Jackson, MS."],
